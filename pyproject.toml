@@ -1,13 +1,23 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools >= 77.0.3"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "stockx-sdk"
+name = "stockx"
 version = "0.0.1"
+authors = [
+  { name="Nick", email="njames.programming@gmail.com" },
+]
 description = "A Python SDK for seamless interaction with the StockX marketplace API"
 readme = "README.md"
-license = { text = "MIT" }
-authors = [{ name = "Nick", email = "njames.programming@gmail.com" }]
-dependencies = []
-requires-python = ">=3.6"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/RoyalGr4pe/stockx-sdk"
+Issues = "https://github.com/RoyalGr4pe/stockx-sdk/issues"
