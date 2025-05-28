@@ -1,8 +1,13 @@
+# Local Imports
+from .secure import secure_call
+
+# External Imports
 import httpx
 
 API_KEY = None
 JWT     = None
 HEADERS = {}
+
 
 def setup(api_key: str, jwt: str):
     """
@@ -38,6 +43,7 @@ def setup(api_key: str, jwt: str):
     }
 
 
+@secure_call()
 async def execute(url: str, params: dict = {}):
     async with httpx.AsyncClient() as client:
         resp = await client.get(url, params=params, headers=HEADERS)

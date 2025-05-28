@@ -3,7 +3,7 @@ from .secure import secure_call
 from .connection import execute
 
 
-@secure_call
+@secure_call()
 async def get_active_orders(params: dict):
     """
     Retrieve the current user’s active orders from the StockX API.
@@ -74,7 +74,7 @@ async def get_active_orders(params: dict):
     return await execute(url, query)
 
 
-@secure_call
+@secure_call()
 async def get_historical_orders(params: dict):
     """
     Retrieve the user’s historical orders from the StockX API.
@@ -152,7 +152,7 @@ async def get_historical_orders(params: dict):
     return await execute(url, query)
 
 
-@secure_call
+@secure_call()
 async def get_single_order(order_number: str):
     """
     Retrieve details for a single order by its StockX order number.

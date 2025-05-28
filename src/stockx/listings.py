@@ -3,7 +3,7 @@ from .secure import secure_call
 from .connection import execute
 
 
-@secure_call
+@secure_call()
 async def get_all_listings(params: dict):
     """
     Retrieve a paginated list of selling listings from the StockX API.
@@ -91,7 +91,8 @@ async def get_all_listings(params: dict):
 
     return await execute(url, query)
 
-@secure_call
+
+@secure_call()
 async def get_single_listing(listingId: str):
     """
     Retrieve details for a single selling listing by its unique identifier from the StockX API.
