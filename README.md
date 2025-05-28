@@ -7,7 +7,7 @@ A Python SDK for seamless interaction with the StockX Marketplace API. This SDK 
 ## 📦 Installation
 
 ```
-pip install stockx-sdk
+pip install stockx
 ```
 
 ---
