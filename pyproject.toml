@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stockx-sdk"
+version = "0.0.1"
+description = "A Python SDK for seamless interaction with the StockX marketplace API"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Nick", email = "njames.programming@gmail.com" }]
+dependencies = []
+requires-python = ">=3.6"
