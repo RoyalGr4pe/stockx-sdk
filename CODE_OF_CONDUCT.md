@@ -61,7 +61,7 @@ representative at an online or offline event.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement at
-[https://github.com/RoyalGr4pe/stockx-sdk/issues/new?assignees=&labels=code-of-conduct&template=conduct_report.md&title=](https://github.com/RoyalGr4pe/stockx-sdk/issues/new?assignees=&labels=code-of-conduct&template=conduct_report.md&title=)..
+[Report](https://github.com/RoyalGr4pe/stockx-sdk/issues/new?assignees=&labels=code-of-conduct&template=conduct_report.md&title=)..
 All complaints will be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the
