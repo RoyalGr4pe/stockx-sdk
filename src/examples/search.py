@@ -5,7 +5,7 @@ import asyncio
 
 API_KEY = "STOCK-X-API-KEY"
 JWT = "STOCK-X-JWT"
-setup(API_KEY, JWT)
+setup({"api_key": API_KEY, "jwt": JWT})
 
 
 async def search_query():

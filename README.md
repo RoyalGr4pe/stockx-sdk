@@ -19,7 +19,7 @@ Before calling any functions, you must configure the SDK with your API key and J
 ```python
 from stockx.connection import setup
 
-setup(api_key="YOUR_API_KEY", jwt="YOUR_JWT_TOKEN")
+setup({"api_key": "YOUR_API_KEY", "jwt": "YOUR_JWT_TOKEN"})
 ```
 
 ---
@@ -31,6 +31,7 @@ setup(api_key="YOUR_API_KEY", jwt="YOUR_JWT_TOKEN")
 Fetch all listings based on various filters.
 
 #### Parameters:
+
 - `pageNumber` (int): The requested page number. Starts at 1.
 - `pageSize` (int): Number of listings per page.
 - `productIds` (str): Comma-separated product IDs.
@@ -43,6 +44,7 @@ Fetch all listings based on various filters.
 - `initiatedShipmentDisplayIds` (str): Unique shipment display IDs.
 
 #### Returns:
+
 `dict` – JSON response containing listing data.
 
 ---
@@ -52,9 +54,11 @@ Fetch all listings based on various filters.
 Fetch a single listing by its ID.
 
 #### Parameters:
+
 - `listingId` (str): The unique ID of the listing.
 
 #### Returns:
+
 `dict` – JSON response of the listing.
 
 ---
@@ -64,6 +68,7 @@ Fetch a single listing by its ID.
 Fetch active orders using optional filters.
 
 #### Parameters:
+
 - `pageNumber` (int): Page number to retrieve.
 - `pageSize` (int): Number of results per page.
 - `orderStatus` (str): Status filter (`CREATED`, `SHIPPED`, etc.).
@@ -74,6 +79,7 @@ Fetch active orders using optional filters.
 - `initiatedShipmentDisplayIds` (str): Shipment display ID.
 
 #### Returns:
+
 `dict` – JSON response with active orders.
 
 ---
@@ -83,6 +89,7 @@ Fetch active orders using optional filters.
 Fetch historical orders using filters and date range.
 
 #### Parameters:
+
 - `fromDate` (str): Start date (`YYYY-MM-DD`).
 - `toDate` (str): End date (`YYYY-MM-DD`).
 - `pageNumber` (int): Page number (default: 1).
@@ -94,6 +101,7 @@ Fetch historical orders using filters and date range.
 - `initiatedShipmentDisplayIds` (str): Shipment display ID.
 
 #### Returns:
+
 `dict` – JSON response with order history.
 
 ---
@@ -103,9 +111,11 @@ Fetch historical orders using filters and date range.
 Fetch a specific order by order number.
 
 #### Parameters:
+
 - `orderNumber` (str): The unique order number to fetch.
 
 #### Returns:
+
 `dict` – JSON response with order details.
 
 ---
@@ -115,11 +125,13 @@ Fetch a specific order by order number.
 Search the StockX product catalog using a keyword and optional pagination.
 
 #### Parameters:
+
 - `query` (str): Search term (e.g., product name, style code).
 - `pageNumber` (int): Page number of results to retrieve (default: 1).
 - `pageSize` (int): Number of results per page (default: 1).
 
 #### Returns:
+
 `dict` – JSON response containing matched products and pagination metadata.
 
 ---
