@@ -110,6 +110,20 @@ Fetch a specific order by order number.
 
 ---
 
+### `search(params: dict)`
+
+Search the StockX product catalog using a keyword and optional pagination.
+
+#### Parameters:
+- `query` (str): Search term (e.g., product name, style code).
+- `pageNumber` (int): Page number of results to retrieve (default: 1).
+- `pageSize` (int): Number of results per page (default: 1).
+
+#### Returns:
+`dict` – JSON response containing matched products and pagination metadata.
+
+---
+
 ## 📄 License
 
 This project is licensed under the MIT License.
